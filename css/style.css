@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+header .mynavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+header .mynavbar a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+  margin-top: 15px;
+}
+
+header .mynavbar a:nth-child(2) {
+  color: #f6755e;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  margin-top: 0;
+}
+
+header .mynavbar button {
+  width: 5rem;
+  height: 2rem;
+  margin-top: 10px;
+  border: 1px solid gray;
+  background: none;
+  font-size: 0.9rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .banner {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+header .banner h1 {
+  font-size: 2.5rem;
+  color: #25a2c3;
+  margin-bottom: 2rem;
+}
+
+header .banner p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+header .banner button {
+  width: 10rem;
+  height: 3rem;
+  color: #fff;
+  background-color: #f6755e;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.three-box {
+  padding: 10rem 6rem;
+}
+
+.three-box .box {
+  width: 30%;
+}
+
+.three-box .box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  color: #25a2c3;
+  text-align: right;
+}
+
+.three-box .box p {
+  font-size: 0.8rem;
+  text-align: right;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+}
+
+.three-box .box img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.three-box :nth-child(3) h3 {
+  text-align: left;
+}
+
+.three-box :nth-child(3) p {
+  text-align: left;
+}
+
+.full-width-banner {
+  width: 100%;
+  background-color: #f6755e;
+  padding: 5rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.full-width-banner .mid-text {
+  padding: 0 3rem;
+}
+
+.full-width-banner .mid-text h2 {
+  padding-bottom: 3rem;
+}
+
+.full-width-banner .mid-text p {
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 3rem;
+}
+
+.full-width-banner .mid-text h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0.8rem;
+}
+
+.full-width-banner .mid-text h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.three-img {
+  margin: 8rem 0;
+}
+
+.three-img .area {
+  width: 30%;
+}
+
+.three-img .area img {
+  width: 95%;
+}
+
+.three-img .area h3 {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  color: #25a2c3;
+  font-weight: 600;
+}
+
+.three-img .area p {
+  font-size: 0.85rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #25a2c3;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  word-spacing: 0.3rem;
+  padding-bottom: 3rem;
+}
+
+footer span {
+  color: #f6755e;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+footer span i {
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+footer hr {
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+footer h4 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 200;
+}
+
+@media (max-width: 992px) {
+  header .banner {
+    padding-top: 5rem;
+  }
+  header .banner h1 {
+    font-size: 2rem;
+  }
+  header .banner p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  header .banner button {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header .mynavbar a {
+    font-size: 1.2rem;
+  }
+  header .mynavbar a:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  header .mynavbar button {
+    width: 4rem;
+    height: 1.8rem;
+    font-size: 0.6rem;
+  }
+  header .banner h1 {
+    font-size: 1.5rem;
+  }
+  header .banner p {
+    font-size: 0.8rem;
+  }
+  header .banner button {
+    width: 6rem;
+    height: 2.3rem;
+    font-size: 0.5rem;
+  }
+  .three-box {
+    padding: 8rem 4rem;
+  }
+  .three-box .box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .three-box .box h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .three-box .box p {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .full-width-banner .mid-text {
+    padding: 0;
+  }
+  .full-width-banner .mid-text h2 {
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  .full-width-banner .mid-text p {
+    line-height: 1.2rem;
+    padding: 0 5rem;
+    font-size: 0.8rem;
+  }
+  .full-width-banner .mid-text h4 {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .full-width-banner .mid-text h5 {
+    font-size: 0.9rem;
+  }
+  .three-img {
+    margin: 4rem 0;
+  }
+  .three-img .area {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .three-img h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .three-img p {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  footer h2 {
+    font-size: 1rem;
+    word-spacing: 0.2rem;
+  }
+  footer span {
+    margin: 0 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+  footer hr {
+    margin-top: 0.5rem;
+  }
+  footer h4 {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

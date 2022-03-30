@@ -1,0 +1,425 @@
+// variables
+
+$primary-font-1: 'Montserrat', sans-serif;
+$primary-font-2: 'Pacifico', cursive;
+$primary-color-1: #f6755e;
+$primary-color-2: #25a2c3;
+$white-col: #fff;
+$gray-col: gray;
+
+@mixin  flex-property {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font-1;
+}
+
+html{
+    font-size: 15px;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-box{
+    @include flex-property();
+}
+
+// header
+
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center top;
+
+    .mynavbar{
+        @include flex-property();
+        width: 100%;
+        height:60px;
+        background-color: $white-col;
+        align-content: space-between;
+
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: $gray-col;
+            margin-top: 15px;
+        }
+
+        a:nth-child(2){
+            color: $primary-color-1;
+            font-weight: 600;
+            font-size: 2rem;
+            font-family: $primary-font-2;
+            margin-top: 0;
+        }
+
+        button{
+            width: 5rem;
+            height: 2rem;
+            margin-top: 10px;
+            border: 1px solid $gray-col;
+            background: none;
+            font-size: 0.9rem;
+            font-weight: 900;
+            font-family: $primary-font-1;
+        }
+    }
+
+    .banner{
+        text-align: center;
+        padding-top: 10rem;
+
+        h1{
+            font-size: 2.5rem;
+            color: $primary-color-2;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            line-height: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        button{
+            width: 10rem;
+            height: 3rem;
+            color: $white-col;
+            background-color: $primary-color-1;
+            border: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: $primary-font-1;
+        }
+    }
+
+}
+
+
+// three box
+
+
+.three-box{
+    padding: 10rem 6rem;
+
+
+    .box{
+        width: 30%;
+
+        h3{
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            color: $primary-color-2;
+            text-align: right;
+        }
+
+        p{
+            font-size: 0.8rem;
+            text-align: right;
+            letter-spacing: 0.1rem;
+            line-height: 1.2rem;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+
+    :nth-child(3){
+        
+        h3{
+            text-align: left;
+        }
+
+        p{
+            text-align: left;
+        }
+    }
+}
+
+
+// full-width
+
+
+.full-width-banner{
+    width: 100%;
+    background-color: $primary-color-1;
+    padding: 5rem 0;
+    text-align: center;
+    color: $white-col;
+
+    .mid-text{
+        padding: 0 3rem;
+
+        h2{
+            padding-bottom: 3rem;
+        }
+
+        p{
+            font-weight: 200;
+            letter-spacing: 0.1rem;
+            line-height: 2rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            padding-bottom: 3rem;
+        }
+
+        h4{
+            font-size: 1rem;
+            font-weight: 400;
+            padding-bottom: 0.8rem;
+        }
+
+        h5{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+// three img starts
+
+
+.three-img{
+        margin: 8rem 0;
+
+    .area{
+        width: 30%;
+
+        img{
+            width: 95%;
+        }
+
+        h3{
+            margin-left: 2rem;
+            margin-top: 1.5rem;
+            color: $primary-color-2;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 0.85rem;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+
+// footer
+
+
+footer{
+    width: 100%;
+    background-color: $primary-color-2;
+    padding: 5rem 0;
+    text-align: center;
+
+    h2{
+        font-size: 1.5rem;
+        color: $white-col;
+        word-spacing: 0.3rem;
+        padding-bottom: 3rem;
+    }
+
+    span{
+        color: $primary-color-1;
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+        
+        i{
+            color: $white-col;
+            margin-left: 0.5rem;
+        }
+    }
+
+    hr{
+        width: 50%;
+        margin: 0 auto;
+        height: auto;
+        color: $white-col;
+        margin-bottom: 2rem;
+    }
+
+    h4{
+        font-size: 1rem;
+        color: $white-col;
+        font-weight: 200;
+    }
+}
+
+
+
+@media (max-width:992px){
+
+    header{
+        .banner{
+            padding-top: 5rem;
+
+            h1{
+                font-size: 2rem;
+            }
+
+            p{
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            button{
+                width: 8rem;
+                height: 2.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:576px){
+
+    header{
+        .mynavbar{
+            a{
+                font-size: 1.2rem;
+            }
+
+            a:nth-child(2){
+                font-size: 1.5rem;
+            }
+
+            button{
+                width: 4rem;
+                height: 1.8rem;
+                font-size: 0.6rem;
+            }
+        }
+
+        .banner{
+            h1{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+
+            button{
+                width: 6rem;
+                height: 2.3rem;
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+
+    .three-box{
+        padding: 8rem 4rem;
+
+        .box{
+            width: 80%;
+            margin: 0 auto;
+
+            h3{
+                font-size: 1rem;
+                text-align: center;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 0.6rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        
+        }
+
+    }
+
+    .full-width-banner{
+        .mid-text{
+            padding: 0;
+
+            h2{
+                padding-bottom: 2rem;
+                font-size: 1.2rem;
+            }
+
+            p{
+                line-height: 1.2rem;
+                padding: 0 5rem;
+                font-size: 0.8rem;
+            }
+
+            h4{
+                margin-top: 0.3rem;
+                font-size: 0.9rem;
+            }
+
+            h5{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .three-img{
+        margin: 4rem 0;
+
+        .area{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h3{
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        p{
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    footer{
+        h2{
+            font-size: 1rem;
+            word-spacing: 0.2rem;
+        }
+
+        span{
+            margin: 0 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        hr{
+            margin-top: 0.5rem;
+        }
+
+        h4{
+            font-size: 0.8rem;
+        }
+    }
+}
+
